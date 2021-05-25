@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#game {
+  width: 700px;
+  height: 450px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+#charecture {
+  width: 50px;
+  height: 80px;
+  position: relative;
+  top: 370px;
+  background: rgb(102, 102, 102);
+}
+.animation {
+  animation: char 500ms linear;
+}
+@keyframes char {
+  0% {
+    top: 370px;
+  }
+  25% {
+    top: 320px;
+  }
+  50% {
+    top: 300px;
+  }
+  75% {
+    top: 320px;
+  }
+  100% {
+    top: 370px;
+  }
+}
+#object {
+  width: 50px;
+  height: 50px;
+  background: red;
+  position: relative;
+  top: 320px;
+  left: 650px;
+  animation: obj 1s infinite linear;
+}
+@keyframes obj {
+  0% {
+    left: 670px;
+  }
+  100% {
+    left: -50px;
+  }
+}
